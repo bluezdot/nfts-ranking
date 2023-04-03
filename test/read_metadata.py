@@ -53,8 +53,6 @@ def main(head, baseURI, id):
     download_image(_metadata['image'])
 
 if __name__ == '__main__':
-    main(_head, _baseURI, 0)
-    main(_head, _baseURI, 1)
-    main(_head, _baseURI, 2)
-    main(_head, _baseURI, 3)
+    for i in range(10):
+        main(_head, _baseURI, i)
     
